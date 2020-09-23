@@ -1,0 +1,62 @@
+body {  
+    
+    /* 1. transform 이용한 방법 */
+    /* position : absolute; */
+    /* top : 280px;
+    left: 50%;  */
+    /* transform: translate(-50%,-50%); */
+
+    /* 2. flexbox 사용 */
+    /* 이때 각 자식 요소을 부모 요소 내에서 정렬하기 위해서는 각 자식 요소의 너비를 %로 지정하는 등 번거로운 처리가 필요하다. 자식 요소의 사이즈가 불명확하거나 동적으로 변화할 때에는 더욱 처리가 복잡해 진다. grid 시스템을 사용할 수 도 있으나 이 또한 새로운 학습이 필요하고 라이브러리를 로드해야하는 번거로움이 존재한다. */
+    margin-top : 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display:block;
+    width : 350px;
+    margin-left: 150px;
+    /* 더 밑으로 붙이면 이미지 여백 때문에 검색창의 선이 짤려버림 */
+    margin-bottom: -25px;
+}
+
+#searchbar {
+    margin: 30px;
+    display:block;
+    width: 600px;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    border-radius : 40px;
+
+    /* icon 은 작동이 안 되어 주석 처리 했습니다 */
+    /* background : url("search.webp") no-repeat 7px 7px scroll; */
+    
+}
+
+#middleButtons {
+    margin-left: 200px;
+    display:block;
+}
+
+.button {
+    padding : 10px;
+    padding-left : 20px;
+    padding-right : 20px;
+    height : 40px;
+    border: 0px;
+    border-radius : 4px;
+}
+
+#searchbar:hover {
+    box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    border: 1px solid gray;
+    border-radius : 4px;
+}
+
+
+
